@@ -1,0 +1,22 @@
+
+
+
+<div class='history'>
+<h1 class='history__title'> Booking history for <%= @user.username %></h1>
+<% if @bookings.present?  %>
+
+ <div class="card history__card__container">
+
+  <ul class='history__card'>
+
+    <% @bookings.each do |booking| %>
+      <li>
+
+        <%= booking.stade.name %> - <span><%= booking.date %></span>
+    <% end %>
+  </ul>
+    </div>
+<% else %>
+  <p>No bookings found</p>
+<% end %>
+</div>

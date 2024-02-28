@@ -1,0 +1,2 @@
+class Stade < ApplicationRecord
+end

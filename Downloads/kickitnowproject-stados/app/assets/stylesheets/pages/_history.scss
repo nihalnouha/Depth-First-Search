@@ -1,0 +1,93 @@
+// .history {
+//   &__title {
+//     font-size: 36px;
+//     margin: 48px;
+//     font-family: Academy Engraved LET;
+//     margin: 0;
+//   }
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 100%;
+//   padding: 48px 24px;
+//   background-color: aliceblue;
+//   .history__card__container {
+//     height: auto !important;
+//     width: 80%;
+//   }
+//   .history__card {
+//     width: 100%;
+//     display: flex;
+//     flex-direction: column;
+//     gap: 24px;
+//     li {
+//       list-style: none;
+//       // text-align: center;
+//       span {
+//         font-weight: 500;
+//         color: lightseagreen;
+//       }
+//     }
+//   }
+// }
+// body {
+//   background-color: aliceblue;
+// }
+// Base styling
+$primary-color: lightseagreen;
+$background-color: aliceblue;
+.history {
+  &__title {
+    font-size: 36px;
+    margin: 0;
+    font-family: 'Academy Engraved LET';
+    color: seagreen;
+    text-align: center;
+  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 48px 24px;
+  background-color: whitesmoke;
+  flex-direction: column;
+  &__card__container {
+    width: 100%;
+    margin-top: 24px;
+    padding: 16px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    height: auto !important;
+    height: 254px;
+    background: linear-gradient(135deg, lightseagreen 0%, black 100%);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+  &__card {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    li {
+      list-style: none;
+      padding: 12px;
+      background-color: white;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 4px;
+      span {
+        font-weight: 500;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+
+
+
+
+
