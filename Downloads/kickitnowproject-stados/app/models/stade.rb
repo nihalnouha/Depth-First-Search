@@ -1,2 +1,0 @@
-class Stade < ApplicationRecord
-end
